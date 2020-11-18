@@ -1,0 +1,25 @@
+[debug] [2020-11-18T00:51:36.099Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T00:51:36.100Z] Command:       /Users/georgepilitsoglou/Developer/proto/nenv/bin/node /Users/georgepilitsoglou/Developer/proto/nenv/bin/firebase deploy
+[debug] [2020-11-18T00:51:36.101Z] CLI Version:   8.16.2
+[debug] [2020-11-18T00:51:36.101Z] Platform:      darwin
+[debug] [2020-11-18T00:51:36.101Z] Node Version:  v13.10.0
+[debug] [2020-11-18T00:51:36.101Z] Time:          Wed Nov 18 2020 02:51:36 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-11-18T00:51:36.101Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T00:51:36.102Z] 
+[debug] [2020-11-18T00:51:36.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T00:51:36.108Z] > authorizing via signed-in user
+[debug] [2020-11-18T00:51:36.108Z] [iam] checking project dreamers-1258e for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-18T00:51:36.110Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dreamers-1258e:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-18T00:51:36.522Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 00:51:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=127","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T00:51:36.524Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/dreamers-1258e/serviceAccounts/dreamers-1258e@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-11-18T00:51:36.859Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 00:51:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T00:51:36.861Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/dreamers-1258e  
+ 
+[debug] [2020-11-18T00:51:37.241Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 00:51:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'dreamers-1258e'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
