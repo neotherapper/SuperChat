@@ -8,9 +8,11 @@ import "firebase/auth";
 import "firebase/analytics";
 
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useCollectionData } from "react-firebase-hooks/firestore";
 
 import { auth } from "./services/firebase";
+import { ChatRoom } from "./chat/chat-room";
+import { SignIn  } from "./auth/signin";
+import { SignOut } from "./auth/signout";
 
 function App() {
   const [user] = useAuthState(auth);
@@ -18,12 +20,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <section>
-          <h1>Hi</h1>
-        </section>
-
+        <h1>⚛️🔥💬</h1>
+        <SignOut />
       </header>
+
+      <section>{user ? <ChatRoom /> : <SignIn />}</section>
     </div>
   );
 }

@@ -19,4 +19,4 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 
-export { auth, firestore, analytics };
+export { auth, firestore, analytics, firebase };
