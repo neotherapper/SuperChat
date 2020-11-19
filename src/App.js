@@ -5,6 +5,8 @@ import './App.css';
 import { useAuthState } from "react-firebase-hooks/auth";
 
 import { auth } from "./services/firebase";
+
+// components
 import { ChatRoom } from "./chat/chat-room";
 import { SignIn  } from "./auth/signin";
 import { SignOut } from "./auth/signout";
