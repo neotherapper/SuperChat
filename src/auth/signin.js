@@ -7,7 +7,6 @@ export const SignIn = () => {
     auth.signInWithPopup(provider);
   };
 
-
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>
