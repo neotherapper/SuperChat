@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-versions: [8.x]
+        node-versions: '8.x'
 
     steps:
       # Setup steps
