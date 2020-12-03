@@ -1,6 +1,6 @@
 import React from "react";
 
-import './App.css';
+import "./App.css";
 
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -8,7 +8,7 @@ import { auth } from "./services/firebase";
 
 // components
 import { ChatRoom } from "./chat/chat-room";
-import { SignIn  } from "./auth/signin";
+import { SignIn } from "./auth/signin";
 import { SignOut } from "./auth/signout";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>⚛️🔥💬</h1>
+        <h1>Dream Chat</h1>
         <SignOut />
       </header>
 

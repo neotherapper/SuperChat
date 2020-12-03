@@ -4,7 +4,6 @@ import "firebase/auth";
 import "firebase/analytics";
 
 firebase.initializeApp({
-  // your config
   apiKey: "AIzaSyDUQLyNq-lUpvV-RO6T5FgUhswc33Bj3TQ",
   authDomain: "dreamers-1258e.firebaseapp.com",
   databaseURL: "https://dreamers-1258e.firebaseio.com",
